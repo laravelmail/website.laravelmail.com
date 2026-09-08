@@ -16,7 +16,7 @@ export const testimonials: Testimonial[] = [
     company: "LeadScale",
     avatar: "/images/testimonials/customer-sarah.webp",
     quote:
-      "The best investment we've made for our marketing team. We went from paying Mailchimp $800/mo to just £10/mo with Laravel Mail. The self-hosting was easy and the leads are high quality.",
+      "The best investment we've made for our marketing team. We went from paying Mailchimp $800/mo to with free core + £50 one-time add-on bundle via early access. The self-hosting was easy and the leads are high quality.",
   },
   {
     id: "marcus-k",
@@ -34,7 +34,7 @@ export const testimonials: Testimonial[] = [
     company: "DevEngine",
     avatar: "/images/testimonials/customer-chen.webp",
     quote:
-      "The AI agents alone are worth 10x the subscription price. They handle our lead warmups and basic inquiries perfectly. Having full source code access is a developer's dream.",
+      "The AI agents alone are worth 10x the one-time add-on price. They handle our lead warmups and basic inquiries perfectly. Having full source code access is a developer's dream.",
   },
   {
     id: "david",

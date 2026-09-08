@@ -92,7 +92,7 @@
         "comparison": {
             "label": "SendGrid vs LaravelMail",
             "rows": [
-                { "item": "Pricing", "competitor": "$19.95+ /mo (Scaled)", "laravel": "£10 /mo (Flat)" },
+                { "item": "Pricing", "competitor": "$19.95+ /mo (Scaled)", "laravel": "Free core + £50 one-time add-ons" },
                 { "item": "AI Agents", "competitor": "No (Third-party only)", "laravel": "Yes (Local Ollama)" },
                 { "item": "Data Ownership", "competitor": "Shared / SaaS", "laravel": "100% Self-Hosted" },
                 { "item": "B2B Leads", "competitor": "No", "laravel": "Yes (Included)" }
@@ -109,7 +109,7 @@
             "label": "Feature Comparison",
             "rows": [
                 { "item": "Transactional Speed", "competitor": "Industry Leading", "laravel": "High (Local Queues)" },
-                { "item": "Fixed Cost", "competitor": "No (Volume based)", "laravel": "Yes (£10/mo)" },
+                { "item": "Fixed Cost", "competitor": "No (Volume based)", "laravel": "Yes (Free + £50 one-time)" },
                 { "item": "Lead Gen", "competitor": "No", "laravel": "Included" }
             ]
         }
