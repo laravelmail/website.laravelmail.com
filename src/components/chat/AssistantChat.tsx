@@ -30,7 +30,7 @@ interface DebugStats {
   responseSize: number;
 }
 
-const PRIMARY_AI_ENDPOINT = import.meta.env.PUBLIC_PRIMARY_AI_ENDPOINT || "https://ai.izdrail.com";
+const PRIMARY_AI_ENDPOINT = import.meta.env.PUBLIC_PRIMARY_AI_ENDPOINT || "https://llm.laravelmail.com";
 const FALLBACK_AI_ENDPOINT = import.meta.env.PUBLIC_FALLBACK_AI_ENDPOINT;
 
 const presetAvatars = [

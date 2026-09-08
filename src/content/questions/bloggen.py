@@ -105,7 +105,7 @@ log = logging.getLogger("bloggen")
 # CONFIGURATION
 # ============================================================================
 DEFAULT_CONFIG = {
-    "api_endpoint": "https://ai.izdrail.com/api/chat",
+    "api_endpoint": "https://llm.laravelmail.com/api/chat",
     "model": "gemma4:e2b",
     "api_key": "",
     "request_timeout": 1200,

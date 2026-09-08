@@ -29,7 +29,7 @@ function getOpenRouterBaseUrl(): string {
 function getPrimaryEndpoint(): string {
   const publicEndpoint = import.meta.env.PUBLIC_PRIMARY_AI_ENDPOINT?.trim();
   if (publicEndpoint) return publicEndpoint;
-  return "https://ai.izdrail.com";
+  return "https://llm.laravelmail.com";
 }
 
 function getFallbackEndpoint(): string {
