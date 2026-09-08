@@ -8,6 +8,8 @@ import { getLangFromUrl, useTranslations } from "../../../i18n/utils";
 
 import { languages } from "../../../i18n/ui";
 
+export const prerender = true;
+
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
   const langs = Object.keys(languages).filter(l => l !== 'en');

@@ -6,6 +6,8 @@ import BlogListing from "../../components/BlogListing.astro";
 import { injectSeoLinks } from "../../scripts/seo-utils";
 import { marked } from 'marked';
 
+export const prerender = true;
+
 export async function getStaticPaths({ paginate }) {
     const posts = await getCollection('blog');
     const sortedPosts = posts.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
