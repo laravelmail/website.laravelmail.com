@@ -1,0 +1,17 @@
+---
+import { pricing } from "../config/pricing";
+interface Props { tier: 'core' | 'addons'; ctaHref?: string; ctaLabel?: string; }
+const { tier, ctaHref = "/early-access", ctaLabel = "Request Early Access" } = Astro.props;
+const p = pricing[tier];
+---
+<div class="relative bg-white/5 border border-white/10 rounded-2xl p-8 flex flex-col">
+  <span class="absolute -top-3 right-6 px-3 py-1 rounded-full text-xs font-bold bg-amber-500 text-white">{p.badge}</span>
+  <h3 class="text-xl font-bold text-white">{p.title}</h3>
+  <p class="text-3xl font-black text-white mt-2">{p.label}</p>
+  <p class="text-sm text-gray-400 mt-2">{p.description}</p>
+  <p class="text-xs text-amber-400 mt-2">{p.note}</p>
+  <ul class="mt-6 space-y-2 flex-grow">
+    {p.features.map(f => <li class="text-sm text-gray-300 flex gap-2"><span class="text-brand-primary">✓</span>{f}</li>)}
+  </ul>
+  <a href={ctaHref} class="mt-8 btn btn-primary text-center">{ctaLabel}</a>
+</div>

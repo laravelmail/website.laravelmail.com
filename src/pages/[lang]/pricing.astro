@@ -1,0 +1,8 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PricingCard from "../../components/PricingCard.astro";
+import { languages } from "../../i18n/ui";
+export async function getStaticPaths() { return Object.keys(languages).filter(l=>l!=='en').map(lang=>({params:{lang}})); }
+---
+<Layout title="Pricing – Free core + £50 add-on bundle | Laravel Mail" description="Free open-source email validation. Add-ons available for £50 one-time.">
+<section class="pt-32 pb-20 bg-brand-bg"><div class="container-custom"><div class="max-w-3xl mx-auto text-center mb-12"><h1 class="text-4xl font-black text-white">Free core, <span class="gradient-text">£50 add-ons</span></h1></div><div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto"><PricingCard tier="core" /><PricingCard tier="addons" /></div></div></section>

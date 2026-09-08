@@ -1,0 +1,14 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { pricing } from "../../config/pricing";
+import { languages } from "../../i18n/ui";
+export async function getStaticPaths() { return Object.keys(languages).filter(l=>l!=='en').map(lang=>({params:{lang}})); }
+---
+<Layout title="Request Early Access | Laravel Mail" description="Free core + £50 one-time add-on bundle. Request alpha access via email.">
+<section class="pt-32 pb-20 bg-brand-bg">
+<div class="container-custom max-w-3xl mx-auto text-center">
+<h1 class="text-4xl md:text-5xl font-black text-white mb-4">Request <span class="gradient-text">Early Access</span></h1>
+<p class="text-lg text-gray-400 mb-8">We're in alpha – capacity is limited. To request access, please email us at <a href={pricing.mailto} class="text-brand-primary underline">{pricing.earlyAccessEmail}</a> with your name, company, and use case. We'll review and get back to you within 48 hours.</p>
+<a href={pricing.mailto} class="btn btn-primary">Email {pricing.earlyAccessEmail}</a>
+</div>
+</section>

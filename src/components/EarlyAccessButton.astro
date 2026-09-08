@@ -1,0 +1,5 @@
+---
+interface Props { class?: string; label?: string; href?: string; }
+const { class: cls = "btn btn-primary", label = "Request Early Access", href = "/early-access" } = Astro.props;
+---
+<a href={href} class={cls}>{label}</a>

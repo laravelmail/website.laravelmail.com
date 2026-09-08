@@ -19,6 +19,11 @@ const navItems = [
         title: "Laravel Mail Solutions",
     },
     {
+        name: "Pricing",
+        href: getRelativeLocaleUrl(lang, "/pricing"),
+        title: "Pricing – Free core + £50 add-ons",
+    },
+    {
         name: t('nav.blog'),
         href: getRelativeLocaleUrl(lang, "/blog"),
         title: "Laravel Mail Blog",
@@ -258,11 +263,11 @@ const socialLinks = [
 
 <a
     id="buy-now-btn"
-    title={t('hero.buy_button')}
-    href="https://app.laravelmail.com/register"
+    title="Request Early Access"
+    href={getRelativeLocaleUrl(lang, "/early-access")}
     class="hidden sm:inline-flex btn bg-payflo-purple text-white px-6 py-2.5 rounded-xl font-bold text-sm transition-all hover:shadow-lg hover:shadow-payflo-purple/20 active:scale-95"
 >
-    Login
+    Request Early Access
             </a>
 
             <div class="hidden md:block">

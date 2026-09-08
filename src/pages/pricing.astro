@@ -1,0 +1,19 @@
+---
+import Layout from "../layouts/Layout.astro";
+import PricingCard from "../components/PricingCard.astro";
+---
+<Layout title="Pricing – Free core + £50 add-on bundle | Laravel Mail" description="Free open-source email validation. Add-ons available for £50 one-time – Leads Database + Validation API credits. Alpha access via email.">
+<section class="pt-32 pb-20 bg-brand-bg">
+<div class="container-custom">
+<div class="max-w-3xl mx-auto text-center mb-12">
+<h1 class="text-4xl md:text-5xl font-black text-white">Free core, <span class="gradient-text">£50 add-ons</span></h1>
+<p class="text-lg text-gray-400 mt-4">Free, open-source email validation. Add-ons available for £50 one-time.</p>
+</div>
+<div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+<PricingCard tier="core" />
+<PricingCard tier="addons" />
+</div>
+<p class="text-center text-xs text-gray-500 mt-8">Both tiers in alpha – request access via <a href="mailto:info@laravelmail.com" class="underline">info@laravelmail.com</a></p>
+</div>
+</section>
+<script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"Product","name":"Laravel Mail","offers":[{"@type":"Offer","name":"Core","price":"0","priceCurrency":"GBP","availability":"https://schema.org/PreOrder"},{"@type":"Offer","name":"Add-on Bundle","price":"50","priceCurrency":"GBP","availability":"https://schema.org/LimitedAvailability"}]})} />
